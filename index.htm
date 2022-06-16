@@ -1,0 +1,72 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizza Shop</title>
+<!--
+
+    Pizza Shop Assignment
+    Date: 6/8/22
+    Mackenzie King
+    
+- The use of Web forms
+- The use of POST
+- Use of client/server events
+- Creation of an itemized receipt with total cost
+- Use of HTML with PHP
+- Use of radio buttons and checkboxes
+
+-->
+
+<style>
+  
+  body{
+    /* Set a background image to make the page look more professional. Because I was in a hurry, I used a generic classroom picture */
+   background-image: url(https://beseenontop-wpengine.netdna-ssl.com/wp-content/uploads/2012/11/competitor-pizza-shop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+  }
+/* Set a box element to make the text easier to read against the background image. We'll put all our forms and buttons within this element */
+  #element {
+    background-image: url("https://www.wpfaster.org/wp-content/uploads/2014/06/wrinkled-white-paper-texture-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+		opacity: 96%;
+		box-shadow: 3px 3px 6px 6px black;
+    margin-top: 200px;
+    margin-left: 240px;
+    margin-right: 240px;
+    text-align: center;
+    padding: 50px;
+
+</style></head>
+
+
+
+<body style="margin: 4%;">
+   <section id="element">
+  
+<h1>Pizza Order Form (POST)</h1>
+<form method="post" action="255-U08-POST-proc.php">
+<p>
+  
+Size:
+<input type="radio" name="size" value="Small">Small
+<input type="radio" name="size" value="Medium">Medium
+<input type="radio" name="size" value="Large" checked="checked">Large
+</p>
+<p>
+  
+Topping:
+<input type="checkbox" name="pepp" checked="checked">Pepperoni 
+<input type="checkbox" name="mush">Mushrooms 
+<input type="checkbox" name="gppr">Grn peppers 
+<input type="checkbox" name="bacon" checked="checked">Canadian Bacon
+</p>
+<p>
+<input type="submit" value="Order Pizza!">
+</p>
+</form>
+
+</section></body></html>
